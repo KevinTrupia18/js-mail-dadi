@@ -11,9 +11,9 @@ Non è necessario provvedere alla validazione delle email */
 
 // creo un array con all'interno delle email degli invitati e un prompt per inserire la mail e una variabile userInvited che prima del ciclo sarà falsa 
 
-const listMail = ['bryan@gmail.com','james@gmail.com', 'giacomo@gmail.com' , 'giovanni@gmail.com' , 'giacomo@gmail.com'];
+const listMail = ["bryan@gmail.com","james@gmail.com", "giacomo@gmail.com" , "giovanni@gmail.com", "aldo@gmail.com"];
 
-let userInput = (prompt('inserisci la tua email'));
+let userInput = (prompt("inserisci la tua email"));
 
 let userInvited = false
 
@@ -24,9 +24,18 @@ for(let i=0; i<listMail.length && userInvited === false; i++) {
         userInvited = true;
     }
 
+}
 
 
+// se la mail è presente nella lista array stampa altrimenti non stampare 
 
+if(userInvited === true) {
+    console.log( "sei stato invitato alla festa");
+
+
+} else {
+    
+    console.log( "non sei stato invitato alla festa");
 }
 
  
