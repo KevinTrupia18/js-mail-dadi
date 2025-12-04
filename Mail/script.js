@@ -15,13 +15,14 @@ const listMail = ["bryan@gmail.com","james@gmail.com", "giacomo@gmail.com" , "gi
 
 let userInput = (prompt("inserisci la tua email"));
 
-let userInvited = false
+let userInvited = false  //imposta di base che la mail non sia presente nella lista con un FALSE
 
 
-for(let i=0; i<listMail.length && userInvited === false; i++) {
+
+for(let i=0; i<listMail.length && userInvited === false; i++) { //creo un ciclo che controlli che la mail inserita con pormpt faccia parte dell'array
     
     if(userInput === listMail[i]) {
-        userInvited = true;
+        userInvited = true; // se e presente il ciclo si chiude 
     }
 
 }
